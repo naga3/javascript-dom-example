@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>要素の追加</title>
+</head>
+<body>
+  <div class="row">行1</div>
+  <div class="row">行2</div>
+  <script>
+    const row = document.querySelector('.row')
+    const rows = document.querySelectorAll('.row')
+    const button1 = document.createElement('button')
+    const button2 = document.createElement('button')
+    button1.textContent = 'ボタン1'
+    button2.textContent = 'ボタン2'
+    row.append('テキスト1', button1, button2, 'テキスト2')
+    rows[1].appendChild(button2)
+  </script>
+</body>
+</html>
